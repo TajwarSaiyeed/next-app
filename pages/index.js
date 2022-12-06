@@ -14,7 +14,7 @@ export default function Home({ posts }) {
       <Banner />
       <div>
         {posts.map((post) => (
-          <div className="card my-5 bg-base-100 shadow-xl mx-5">
+          <div key={post.id} className="card my-5 bg-base-100 shadow-xl mx-5">
             <div className="card-body">
               <h2 className="card-title">{post.title}</h2>
               <p>{post.body}</p>
